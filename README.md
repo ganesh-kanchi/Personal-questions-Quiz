@@ -1,2 +1,2 @@
 # How well do you know Me?
-How well do you know me-Quiz? 
+This is a Quiz on "How well you know me".
