@@ -26,11 +26,9 @@ var questions = [{
 
 function play(question, answer) {
     var input = readlineSync.question(question)
-    var verification = () => {
-        score = (input === answer) ? score++ : score ;
-        return (input === answer) ? "You were Right!" :  "You were Wrong :( " ;
-    }
-    console.log(verification)
+    var verification = () =>  (input === answer) ? "You were Right!" :  "You were Wrong :( " ;
+    score += (input === answer) && 1 ;
+    console.log(verification())
     console.log("your score is now " + score)
     console.log("------------------------------")
 };
